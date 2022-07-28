@@ -124,6 +124,9 @@
 #         if i>=b:
 #             break
 #     return answer
+
+#################################################################
+
 # # Q1 Answer template
 # def lcm_sol(a, b):
 #     answer = a
@@ -145,6 +148,8 @@
 # c= lcm_sol(n1,n2)
 # print(f'LCM : {c}')
 
+#################################################################
+
 # Q2 Answer template
 # 내 풀이
 # N = int(input('수 입력: '))
@@ -160,6 +165,8 @@
 #     if NN == N:
 #         break
 # print(count)
+
+#################################################################
 
 # Q3 Answer template
 # def plma_sol(left, right):
@@ -190,6 +197,9 @@
 # n2 = int(input('수2 : '))
 # c = plma_sol(n1,n2)
 # print(c)
+
+#################################################################
+
 # Q4 Answer Template
 # data = input('숫자로 이루어진 문자열을 입력하세요. ')
 # result = 0
@@ -203,6 +213,9 @@
 #         result +=n
 #         print(f'+{n}',end='')
 # print('=',result)
+
+#################################################################
+
 # Q5 Answer Template
 # n = input('숫자를 입력하세요. ')
 # left =0
@@ -219,6 +232,9 @@
 #         print("LUCKY")
 #     else:
 #         print('ready')
+
+#################################################################
+
 # Q6 Answer template
 
 # def sq_sol(n):

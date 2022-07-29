@@ -22,28 +22,31 @@
 #     x[i] = int(input(f'x[{i}]값을 입력하세요.: '))
 # rev_pri(x)
 #MINIQ3
-# def search_count(a,key):
-#     lin_count = 0
-#     sen_count = 0
-#     i=0
-#     while True:
-#         if i==len(a):
-#             break
-#         if a[i]==key:
-#             break
-#         i+=1
-#         lin_count+=1
+def search_count(a,key):
+    lin_count = 0
+    sen_count = 0
+    lin_i=0
+    sen_i=0
+    while True:
+        if lin_i==len(a):
+            lin_i=-1
+            break
+        if a[lin_i]==key:
+            break
+        lin_i+=1
+        lin_count+=1
         
-#     b=a.copy()
-#     b.append(key)
-#     i=0
-#     while True:
-#         if b[i]==key:
-#             break
-#         i+=1
-#         sen_count+=1
-#     return lin_count, sen_count, i
+    b=a.copy()
+    b.append(key)
+    while True:
+        if b[sen_i]==key:
+            break
+        sen_i+=1
+        sen_count+=1
+    if sen_i == len(b)-1:
+        sen_i = -1     
+    return lin_count, sen_count,lin_i,sen_i
 
-# a=[2, 5, 1, 3, 9, 6, 7]
-# n=int(input('검색값'))
-# print(search_count(a,n))
+a=[2, 5, 1, 3, 9, 6, 7]
+n=int(input('검색값: '))
+print(search_count(a,n))

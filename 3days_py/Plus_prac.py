@@ -63,8 +63,86 @@
 #                 r_key = s_key-1
 #                 s_key = (l_key+r_key)//2       
 #     return answer
-
 # store = [2,3,7,8,9]
 # customer = [7,5,9]
 # answer = solution(store, customer)
+# print(answer)
+#######################################################
+# Q4 Answer Template
+
+# def solution(arr):
+#     answer = arr[0]
+#     while True:
+#         for i in range(len(arr)):
+#             if answer%arr[i]:
+#                 break
+#             if i==len(arr)-1:
+#                 return answer
+#         answer+=1
+#         print(answer)
+# arr = [2,6,8,14]
+# answer = solution(arr)
+# print(answer)
+#######################################################
+# Q5 Answer template
+
+def solution(n, s):
+    answer = []
+    num_list=[]
+    set_list = []
+    i=1
+    while True:
+       if (s//2)+1-i==0:
+           break
+       num_list=[i,s-i]
+       set_list.append(num_list)
+       i+=1
+    if set_list == []:
+        answer=[-1]
+    top_mul=1
+    for n in set_list:
+        mul=1
+        for m in n:
+            mul *= m
+        if top_mul < mul:
+            top_mul = mul
+            answer = n.copy()  
+    return answer
+
+n = 2
+s = 9
+answer = solution(n, s)
+print(answer)
+#######################################################
+# Q6 Answer template
+
+# def solution(arr):
+#     m=arr[0]
+#     for i in arr:
+#         if i<m:
+#             m=i
+#     arr.remove(m)
+#     if arr==[]:
+#         arr=[-1]
+#     return arr
+# arr = [4, 3, 2, 1]
+# answer = solution(arr)
+# print(answer)
+#######################################################
+# Q7 Answer Template
+
+# def solution(arr):
+#     answer = []
+#     for i in arr:
+#         if answer ==[]:
+#             answer.append(i)
+#             continue
+#         if i == answer[-1]:
+#             continue
+#         answer.append(i)       
+#     return answer
+
+# # arr = [1,1,3,3,0,1,1]
+# arr = [4,4,4,3,3]
+# answer = solution(arr)
 # print(answer)

@@ -86,33 +86,33 @@
 #######################################################
 # Q5 Answer template
 
-def solution(n, s):
-    answer = []
-    num_list=[]
-    set_list = []
-    i=1
-    while True:
-       if (s//2)+1-i==0:
-           break
-       num_list=[i,s-i]
-       set_list.append(num_list)
-       i+=1
-    if set_list == []:
-        answer=[-1]
-    top_mul=1
-    for n in set_list:
-        mul=1
-        for m in n:
-            mul *= m
-        if top_mul < mul:
-            top_mul = mul
-            answer = n.copy()  
-    return answer
+# def solution(n, s):
+#     answer = []
+#     num_list=[]
+#     set_list = []
+#     i=1
+#     while True:
+#        if (s//2)+1-i==0:
+#            break
+#        num_list=[i,s-i]
+#        set_list.append(num_list)
+#        i+=1
+#     if set_list == []:
+#         answer=[-1]
+#     top_mul=1
+#     for n in set_list:
+#         mul=1
+#         for m in n:
+#             mul *= m
+#         if top_mul < mul:
+#             top_mul = mul
+#             answer = n.copy()  
+#     return answer
 
-n = 2
-s = 9
-answer = solution(n, s)
-print(answer)
+# n = 2
+# s = 9
+# answer = solution(n, s)
+# print(answer)
 #######################################################
 # Q6 Answer template
 
